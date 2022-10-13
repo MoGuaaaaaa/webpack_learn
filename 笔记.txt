@@ -1,0 +1,82 @@
+webpack  +  webapck-cli
+webpack本身只能处理js和json， 其他资源需要插件或者loader进行处理
+
+命令行 和 配置文件webpack.config.js
+1、直接执行npx webpack xxxx xxx  命令行后跟跟配置 
+2、命令行不带配置  完成配置文件之后  命令行直接运行npx webpack， 会在当前命令行目录下找到webpack.config.js， 按照文件所配置内容就行打包
+
+entry: "xxxxx"  入口文件路径(相对路径)
+
+output: {
+  filename: "xxx"  // 入口文件输出路径， 默认main.js
+  path: path.resolve(__dirname, "dist")  // 文件打包路径(绝对路径), 他是所有文件的输出路径，__dirname为nodejs的变量，代表当前文件的文件夹地址， 
+}
+
+loader
+
+plugin
+
+mode
+
+html-webpck-plugin
+
+处理样式资源   额外(css兼容 css压缩)
+style-loader 将样式资源style标签形式插入和HTML中
+mini-css-extract-plugin 将样式资源打包css单文件， 
+
+CSS css-loader
+
+LESS less-loader
+
+SASS sass-loader
+
+Styl stylus-loader
+
+
+处理图片样式
+分为css 和 html 
+css中使用 自带的asset处理
+html中需要使用
+
+
+
+
+
+
+关于ESLint
+配置文件名.eslintrc.js
+moduel.export = {
+  解析选项
+  parserOptions: {
+    
+  }
+  具体检查规则  优先级高于继承规则
+  rules: {
+    
+  }
+  继承其他规则
+  extends: []
+}
+
+vscode的插件 eslint  帮助你在vscode标红看到报错
+下载插件进行检查
+install eslint eslint-webpack-plugin
+但是webpack eslint通过配置文件是知道只检查指定目录，不过vscode确不知道，所以在添加一个配置文件.eslintignore
+
+
+关于babel
+install babel-loader @babel/core @babel/preset-env
+
+
+热加载   webpack-dev-server
+devServer: {
+  host: "xxx",
+  port: "xxx",
+  open: "open" 
+}
+
+
+
+
+
+

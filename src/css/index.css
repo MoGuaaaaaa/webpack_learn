@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: rgb(59, 171, 185);
+}
+
+body {
+  background-color: skyblue;
+}
+.div-0 {
+  width: 50px;
+  height: 50px;
+  background-color: hotpink;
+}
+
+.div-1 {
+  width: 50px;
+  height: 50px;
+  background: url(../images/p1.png);
+}
+
+.div-2 {
+  width: 50px;
+  height: 50px;
+  background: url(../images/p2.png);
+}
+
+.div-3 {
+  width: 50px;
+  height: 50px;
+  background: url(../images/p3.png);
+}
